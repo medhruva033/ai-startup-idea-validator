@@ -198,3 +198,86 @@ VentureLens provides AI-assisted decision support. Feasibility scores, market hy
 Developed as a Final-Year Computer Science Engineering Project.
 
 **GitHub:** https://github.com/medhruva033/ai-startup-idea-validator
+
+
+
+
+# VentureLens Backend
+
+Python FastAPI backend for the VentureLens AI Startup Idea Validator.
+
+## Technology Stack
+
+- Python 3.11+
+- FastAPI
+- SQLAlchemy
+- SQLite / MySQL
+- JWT Authentication
+- Google Gemini API
+- Pydantic
+- Uvicorn
+
+## Installation
+
+```bash
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+## Environment Configuration
+
+Create a `.env` file:
+
+```env
+SECRET_KEY=your_secure_secret_key
+DATABASE_URL=sqlite:///./startup_validator.db
+GEMINI_API_KEY=your_gemini_api_key
+GEMINI_MODEL=gemini-2.5-flash
+FRONTEND_ORIGINS=http://localhost:5173
+ACCESS_TOKEN_MINUTES=60
+```
+
+## Run Backend
+
+```bash
+uvicorn app.main:app --reload --port 8000
+```
+
+## API Documentation
+
+Swagger UI:
+
+http://localhost:8000/docs
+
+ReDoc:
+
+http://localhost:8000/redoc
+
+## Backend Modules
+
+| File | Responsibility |
+|---|---|
+| main.py | API routes and application initialization |
+| ai_service.py | AI analysis integration |
+| config.py | Environment configuration |
+| database.py | Database connection |
+| dependencies.py | Shared API dependencies |
+| models.py | Database models |
+| schemas.py | Request and response validation |
+| security.py | Authentication and password security |
+
+## Testing
+
+```bash
+pytest
+```
+
+## Security Notes
+
+- Keep API keys in `.env`.
+- Never expose secrets to the frontend.
+- Use a strong SECRET_KEY.
+- Configure production CORS restrictions.
+- Add rate limiting before public deployment.
