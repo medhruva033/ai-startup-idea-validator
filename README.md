@@ -281,3 +281,79 @@ pytest
 - Use a strong SECRET_KEY.
 - Configure production CORS restrictions.
 - Add rate limiting before public deployment.
+
+
+
+
+# VentureLens Frontend
+
+React-based frontend for the VentureLens AI Startup Idea Validator.
+
+## Technology Stack
+
+- React.js
+- Vite
+- JavaScript
+- CSS
+- REST API integration
+
+## Installation
+
+```bash
+cd frontend
+npm install
+```
+
+## Environment Configuration
+
+Create a `.env` file:
+
+```env
+VITE_API_URL=http://localhost:8000
+```
+
+## Run Development Server
+
+```bash
+npm run dev
+```
+
+Open:
+
+http://localhost:5173
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+## Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Main Features
+
+- Founder workspace dashboard
+- User authentication
+- Startup idea submission
+- Idea validation report interface
+- Feasibility score visualization
+- SWOT analysis presentation
+- Risk assessment
+- MVP roadmap
+- Analysis history
+- Delete saved analyses
+- Browser print and PDF export
+
+## Backend Connection
+
+The frontend communicates with the FastAPI backend through REST API endpoints.
+
+Default backend:
+
+http://localhost:8000
+
+Ensure that the backend is running before using the application.
