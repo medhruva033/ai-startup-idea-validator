@@ -198,8 +198,6 @@ Developed as a Final-Year Computer Science Engineering Project.
 **GitHub:** https://github.com/medhruva033/ai-startup-idea-validator
 
 
-
-
 # VentureLens Backend
 
 Python FastAPI backend for the VentureLens AI Startup Idea Validator.
