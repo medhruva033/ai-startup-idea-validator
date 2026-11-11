@@ -1,4 +1,5 @@
 # VentureLens – AI Startup Idea Validator
+
 An AI-powered startup intelligence platform that helps founders evaluate business ideas, identify risks, understand customer problems and plan MVP development.
 
 ## Overview
